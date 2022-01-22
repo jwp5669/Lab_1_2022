@@ -104,11 +104,13 @@ def main():
                 file_name = os.path.join(path, inlet_name, file_name_prefix + '_data.csv')
                 hdr = False if os.path.isfile(file_name) else True
                 current_df.to_csv(file_name, mode='a', index_label='Timestamp', header=hdr)
+                col_names = [i for i in current_df.columns]
+                df_dict[inlet_name] = pd.DataFrame(columns=col_names)
                 # if inlet_name == 'ZephyrGeneral':
                 #     print(current_df[['heart_rate', 'battery_percent']])
                 #     print('----------------------')
-                if inlet_name == 'Thalmic Labs Myo 1Myo':
-                    print(current_df.tail())
+                #if inlet_name == 'Thalmic Labs Myo 1Myo':
+                #    print(current_df.tail())
 
 
 
