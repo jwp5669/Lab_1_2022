@@ -1,9 +1,10 @@
-# Physiological Data Collection using LabStream
+# Lab 1
 
 Prerequisites
 ============
-- **Every Platform:** make sure that you have Miniconda installed and that the
-  `conda` command-line interface is on your path
+- **Make Sure to install all the libraries in requirements.txt
+
+
 
 Config File
 ============
@@ -24,14 +25,10 @@ These parameters are used for the Reed Decibel Meter
 - Application Path: the R8080.exe path. 
 
     --This application must be running in order to obtain the sensor readings
+    
+    
+Primary Lab 1 Jupyter Notebook
+==========
 
-Installing/Running
-==================
+This notebook should be edited and turned into MyCourses. The p18_emg file is uploaded on MyCourses, due to file size limits. Please place it in the data directory
 
-- **Windows:** Invoke the script `run.cmd`, which will, if necessary, create a fresh Python 
-  environment and install the necessary dependencies into it
-- **Linux/MacOS:** Not yet supported
-- **Alternative manual install:** you can also follow the instructions in 
-  `conda-environment.yml` to install a Python environment yourself or to add the
-  necessary requirements to an existing environment, and then you can use that
-  interpreter to run `main.py`
