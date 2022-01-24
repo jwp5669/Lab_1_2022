@@ -106,6 +106,7 @@ def main():
                 current_df.to_csv(file_name, mode='a', index_label='Timestamp', header=hdr)
                 col_names = [i for i in current_df.columns]
                 df_dict[inlet_name] = pd.DataFrame(columns=col_names)
+                print(current_df.tail())
                 # if inlet_name == 'ZephyrGeneral':
                 #     print(current_df[['heart_rate', 'battery_percent']])
                 #     print('----------------------')
