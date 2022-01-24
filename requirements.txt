@@ -9,3 +9,4 @@ matplotlib
 pywinusb
 notebook
 scipy
+pyxdf
